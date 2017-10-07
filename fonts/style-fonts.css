@@ -1,19 +1,19 @@
 @font-face{
-font-family: 'PFDiTCPro-Light_0';
+font-family: 'PFD-Light';
 url('PFDinTextCompPro-Light_0.ttf') format('truetype'),
 font-weight: light;
 font-style: normal;
 }
 
 @font-face{
-font-family: 'PFDinTextCompPro-Medium';
+font-family: 'PFD-Medium';
 url('PFDinTextCompPro-Medium.ttf') format('truetype'),
 font-weight: normal;
 font-style: normal;
 }
 
 @font-face{
-font-family: 'PFDinTextCompPro-Regular';
+font-family: 'PFD-Regular';
 url('PFDinTextCompPro-Regular.ttf') format('truetype'),
 font-weight: normal;
 font-style: normal;

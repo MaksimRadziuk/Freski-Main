@@ -12,9 +12,9 @@ font-weight: normal;
 font-style: normal;
 }
 
-@font-face{
+@font-face {
 font-family: 'PFD-Regular';
-url('PFDinTextCompPro-Regular.ttf') format('truetype'),
+src:url('PFDinTextCompPro-Regular.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }

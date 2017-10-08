@@ -10,14 +10,14 @@ $(function() {
   var slider = $('.slider'),
     sliderContent = slider.html(),                      // Содержимое слайдера
     slideWidth = $('.slider-box').outerWidth(),         // Ширина слайдера
-    slideCount = $('.slider div').length,               // Количество слайдов
+    slideCount = $('.slider img').length,               // Количество слайдов
     prev = $('.slider-box .prev'),                      // Кнопка "назад"
     next = $('.slider-box .next'),                      // Кнопка "вперед"
     slideNum = 1,                                       // Номер текущего слайда
   index =0,
   clickBullets=0,
-    sliderInterval = 7000,                              // Интервал смены слайдов
-    animateTime = 3000,                                 // Время смены слайдов
+    sliderInterval = 10000,                              // Интервал смены слайдов
+    animateTime = 5000,                                 // Время смены слайдов
     course = 1,                                         // Направление движения слайдера (1 или -1)
     margin = - slideWidth;                              // Первоначальное смещение слайдов
  
@@ -30,8 +30,8 @@ $(function() {
  
  
   $('.slider-box .bullets li:first').addClass('active');  
-  $('.slider div:last').clone().prependTo('.slider');   // Копия последнего слайда помещается в начало.
-  $('.slider div').eq(1).clone().appendTo('.slider');   // Копия первого слайда помещается в конец.  
+  $('.slider img:last').clone().prependTo('.slider');   // Копия последнего слайда помещается в начало.
+  $('.slider img').eq(1).clone().appendTo('.slider');   // Копия первого слайда помещается в конец.  
   $('.slider').css('margin-left', -slideWidth);         // Контейнер .slider сдвигается влево на ширину одного слайда.
  
   function nextSlide(){                                 // Запускается функция animation(), выполняющая смену слайдов.

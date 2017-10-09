@@ -80,6 +80,45 @@ function prevSlide() {
     }
 }
 
+//активация модального окна заказать звонок
+$(document).ready(function(){
+  $(".btn").click(function() {
+    $("#modal-call").modal('show');
+  });
+});
 
+// работа label:checked B iOS & iPad
+var deviceAgent = navigator.userAgent.toLowerCase();
+    var iOS = deviceAgent.match(/(iphone|ipod|ipad)/);
+    if (iOS) {
+        $('label').click(function (event) {
+            $('#' + $(event.target).attr('for')).attr('checked', true).change();
+        });
+    }
 
+// выведение меню навигации (мобилки)
+$(document).ready(function(){
+  $(".nav-mobile").click(function() {
+    $(".hidden-menu").addClass('show');
+  });
+});
 
+// закрытие меню навигации (мобилки)
+$(document).ready(function(){
+  $(".close-hidden-menu").click(function() {
+    $(".hidden-menu").removeClass('show');
+  });
+});
+
+//выведение модального окна СПАСИБО!
+$(document).ready(function(){
+  $(".modal-footer").click(function() {
+    $("#modal-thankyou").modal('show');
+  });
+});
+
+$(document).ready(function(){
+  $(".modal-footer").click(function() {
+    $("#modal-call").removeClass('show');
+  });
+});

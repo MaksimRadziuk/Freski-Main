@@ -18,6 +18,38 @@
 
 </head>
 <body>
+	<div id="modal-call" class="modal fade">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close-button.png" alt="close"></button>
+	        <h4 class="modal-title">заполните форму, мы перезвоним</h4>
+	      </div>
+	      <div class="modal-body">
+	        <input type="text" class="name" placeholder="Ваше имя">
+	        <input type="text" class="phone" placeholder="Номер телефона">
+	        <input type="checkbox" id="politic" > 
+	        <label for="politic">Принимаю <a href="#">Пользовательское отношение</a> и <a href="#">Политику конфиденциальности</a></label>
+	      </div>
+	      <div class="modal-footer">
+	        <button data-dismiss="modal">Заказать звонок</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div id="modal-thankyou" class="modal fade">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close-button.png" alt="close"></button>
+	        <h1>спасибо!</h1>
+	        <p>Наш менеджер свяжется с вами в ближайшее время</p>
+	      	
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	<header>
 		<div class="container-fluid topbar">
 			<div class="hidden-menu">
@@ -39,6 +71,10 @@
 						<li><a href="#">FAQ</a></li>
 					</ul>
 				</div>
+				<div class="phone-number">
+					<i class="fa fa-phone fa-rotate-270" aria-hidden="true"></i>
+					<a href="tel:+74951112233">+7 (495) 111 - 22 - 33</a>
+				</div>
 				<div class="measurements">
 						Выезд на замер
 				</div>
@@ -46,10 +82,7 @@
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
 					Ежедневно с 9:00 до 20:00
 				</div>
-				<div class="phone-number">
-					<i class="fa fa-phone fa-rotate-270" aria-hidden="true"></i>
-					<a href="tel:+74951112233">+7 (495) 111 - 22 - 33</a>
-				</div>
+				<div class="close-hidden-menu"></div>
 			</div>
 			<div class="mobile">
 				<div>
@@ -146,7 +179,7 @@
 							<i class="fa fa-phone fa-rotate-270" aria-hidden="true"></i>
 							<a href="tel:+74951112233">+7 (495) 111 - 22 - 33</a>
 						</div>
-						<div class="call-order">
+						<div class="call-order btn">
 							<a href="#">Заказать звонок</a>
 							<i class="fa fa-phone fa-rotate-270" aria-hidden="true"></i>
 						</div>

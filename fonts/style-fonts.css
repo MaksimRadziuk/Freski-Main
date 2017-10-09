@@ -6,10 +6,10 @@ font-style: normal;
 }
 
 @font-face{
-font-family: 'PFD-Medium';
-url('PFDinTextCompPro-Medium.ttf') format('truetype'),
+font-family: 'PFD-italic';
+src:url('pfdintextcomppro-italic.ttf') format('truetype');
 font-weight: normal;
-font-style: normal;
+font-style: italic;
 }
 
 @font-face {

@@ -117,8 +117,13 @@ $(document).ready(function(){
   });
 });
 
+//закрытие окна звонка при отсылке формы обратной свзи
 $(document).ready(function(){
   $(".modal-footer").click(function() {
     $("#modal-call").removeClass('show');
   });
 });
+
+
+
+

@@ -204,34 +204,57 @@ body {
 .slide-img {
     width: 100%;
 }
+.slide-overlay {
+	position: absolute;
+	top: 134px;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+.mid-layer {
+	position: absolute;
+	top: 133px;
+	left: 0;
+	width: 16.66666667%;
+	height: calc(50vw - 133px);
+	background-color: rgba(110,111,116,0.7);
+	margin-left: 16.66666667%;
+	border-bottom: solid 20px #babbab;
+	z-index: 2;
+}
 .slider-head-text {
 	position: absolute;
-	width: 500px;
+	width: 100%;
+	height: 100%;
 	color:#fff;
-	z-index: 999;
-	top: 140px;
-	left: 20%;
+	z-index:4;
+	top: 134px;
+	left:0%;
 	text-align: left;
 }
 .slider-head-text h1 {
 	text-transform: uppercase;
 	font-size: 80px;
-	margin-top: 140px;
-	margin-left: 15%;
-
+	margin-top: 80px;
+	margin-left: 22%;
+	z-index: 8;
 }
 .slider-head-text h2 {
 	text-transform: uppercase;
 	font-size: 48px;
 	margin-top: -10px;
-	margin-left: 45%;
+	margin-left: 30%;
 	margin-bottom: 20px;
+	z-index: 8;
 }
 .slider-head-text p {
 	width: 200px;
 	font-size: 22px;
 	margin-top: 50px;
-
+	margin-left: 20%;
+	z-index: 8;
 }
 #prev-btn, #next-btn {
     position: absolute;
@@ -304,6 +327,7 @@ body {
 	height: 135px;
 	background-color: rgba(255,255,255,0.9);
 	overflow:hidden;
+	z-index: 10;
 }
 .slider-header .container {
 	padding: 0;
@@ -381,7 +405,10 @@ body {
 	height: 30px;
 	color:#e1707c;
 	font-size: 16px;
-	line-height: 25px;
+	line-height: 24px;
+}
+.btn {
+	padding: 0;
 }
 .nav {
 	border-top:2px solid #b3b3b3;
@@ -414,24 +441,17 @@ body {
 .slider-nav-wrap {
 	position: absolute;
 	width: 100%;
-	height: 90vh;
+	height: 70vh;
 	top: 135px;
 	left: 0;
-	background-color: rgba(0,0,0,.5);
+	z-index: 10;
 }
 
-.button-block{
-	width: 16.66666667%;
-	height: calc(50vw - 133px);
-	background-color: rgba(110,111,116,0.7);
-	margin-left: 16.66666667%;
-	border-bottom: solid 20px #babbab;
-}
 .button-block button {
 	width: 300px;
 	height: 70px;
 	margin-top: 30vw;
-	margin-left: 30%;
+	margin-left: 20%;
 	background-color: #e1707c;
 	color:#fff;
 	font-size: 24px;
@@ -440,6 +460,7 @@ body {
 	-webkit-box-shadow: 10px 10px 1px 0px rgba(35,34,31,0.3);
 	-moz-box-shadow: 10px 10px 1px 0px rgba(35,34,31,0.3);
 	box-shadow: 10px 10px 1px 0px rgba(35,34,31,0.3);
+	outline: none;
 }
 /* ======== END SLIDER ==========*/
 
@@ -571,6 +592,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	position: relative;
 }
 .bcg-sm-1 {
 	background-image: url(../img/bcg-sm-1.png);
@@ -650,7 +672,25 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
+.overlay-grid {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background-color: rgba(128,122,118,0.7);
+	padding: 30px;
+}
+.overlay-grid h2 {
+	font-size: 36px;
+	text-transform: uppercase;
+	color:#fff;
+	margin-bottom: 20px;
+}
+.overlay-grid p {
+	font-size: 22px;
+	color: #fff;
+}
 /* ======== END PORTFOLIO ==========*/
 
 
@@ -1004,7 +1044,7 @@ footer .container {
 	.slider-head-text h1 {
 		font-size: 60px;
 		margin-top: 30px;
-		margin-left: 10%;
+		margin-left: 20%;
 	}
 	.slider-head-text h2 {
 		font-size: 40px;
@@ -1012,6 +1052,16 @@ footer .container {
 	}
 	.slider-head-text p {
 		width: 180px;
+	}
+	.overlay-grid {
+		padding: 20px;
+	}
+	.overlay-grid h2 {
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+	.overlay-grid p {
+		font-size: 18px;
 	}
 }
 
@@ -1021,6 +1071,12 @@ footer .container {
 	}	
 	.text-part {
 		padding: 50px;
+	}
+	.overlay-grid h2 {
+		font-size: 28px;
+	}
+	.overlay-grid p {
+		font-size: 16px;
 	}
 }
 
@@ -1037,6 +1093,9 @@ footer .container {
 	}
 	.text-part p {
 		font-size: 16px;
+	}
+	.overlay-grid {
+		padding: 10px 20px;
 	}
 }
 
@@ -1065,7 +1124,7 @@ footer .container {
 	.slider-head-text h1 {
 		font-size: 40px;
 		margin-top: 30px;
-		margin-left: 10%;
+		margin-left: 20%;
 	}
 	.slider-head-text h2 {
 		font-size: 28px;
@@ -1073,6 +1132,16 @@ footer .container {
 	}
 	.slider-head-text p {
 		width: 150px;
+		font-size: 14px;
+	}
+	.overlay-grid {
+		padding: 10px;
+	}
+	.overlay-grid h2{
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+	.overlay-grid p {
 		font-size: 14px;
 	}
 	.promo-block {
@@ -1138,21 +1207,22 @@ footer .container {
 		margin-top: 23vw;
 	}
 	.slider-head-text {
-		left: 18%;
+		left: 0%;
 	}
 	.slider-head-text h1 {
 		font-size: 30px;
 		margin-top: 20px;
-		margin-left: 7%;
+		margin-left: 18%;
 	}
 	.slider-head-text h2 {
 		font-size: 24px;
-		margin-left: 15%;
+		margin-left: 22%;
 	}
 	.slider-head-text p {
 		width: 130px;
 		font-size: 12px;
 		margin-top: 20px;
+		margin-left: 18%;
 	}
 	.promo-block {
 		padding-left: 40px;
@@ -1359,6 +1429,15 @@ footer .container {
 		width:auto;
 	    height: 80vh;
 	}
+	.slide-overlay {
+		top: 65px;
+	}
+	.mid-layer {
+		top: 65px;
+		margin-left: 0;
+		width: 50%;
+		height: 100%;
+	}
 	.slider-head-text h1 {
 		font-size: 60px;
 	}
@@ -1366,6 +1445,17 @@ footer .container {
 		font-size: 40px;
 	}
 	.slider-head-text p {
+		font-size: 22px;
+		width: 30%;
+	}
+	.overlay-grid {
+		padding:30px;
+	}
+	.overlay-grid h2{
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+	.overlay-grid p {
 		font-size: 22px;
 	}
 	.promo-block {
@@ -1669,6 +1759,15 @@ footer .container {
 }
 
 @media all and (max-width: 420px) {
+	.slider-box{
+	  max-height: 500px;
+	}
+	.slider-nav-wrap {
+		max-height: 500px;
+	}
+	.button-block button {
+		margin: 360px auto 0 50%;
+	}
 	.slider-head-text h1 {
 		font-size: 40px;
 	}
@@ -1689,6 +1788,19 @@ footer .container {
 	.promo-block .text {
 		font-size: 16px;
 		line-height: 20px;
+
+	}
+	.overlay-grid {
+		padding: 30px;
+		height: 100%;
+	}
+	.overlay-grid h2{
+		margin-top: 0;
+		margin-bottom: 5px;
+		font-size: 22px;
+	}
+	.overlay-grid p {
+		font-size: 14px;
 	}
 }
 

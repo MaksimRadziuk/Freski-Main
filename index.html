@@ -14,7 +14,8 @@
 	<link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
 	<link rel="stylesheet" href="fonts/style-fonts.css" type="text/css">
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="css/style.css" type="text/css" rel="stylesheet" /> -->
+    <link href="css/sumStyle.css" type="text/css" rel="stylesheet" />
 
 </head>
 <body>
@@ -102,42 +103,40 @@
 				</div>
 
 			</div>
-			<div class="container">
-				<div class="navigation">
-					<ul>
-						<li><a href="#">Доставки и оплата</a></li>
-						<li><a href="#">Услуги</a></li>
-						<li><a href="#">Отзывы</a></li>
-						<li><a href="#">Акции</a></li>
-						<li><a href="#">FAQ</a></li>
-					</ul>
-				</div>
-				<div class="search-input">
-					<input type="text" placeholder="Поиск по артикулу или названию">
-				</div>
-				<div class="sign-in-box">
-					<div class="sign-in">
-						<a href="#"><i class="fa fa-user" aria-hidden="true"></i>Вход</a>
-					</div>
-					<div class="busket-block">
-						<div class="busket">
-							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-							<div class="busket-amount">1</div>
-						</div>
-						<div class="sum">
-							<p>на 
-								<span>
-								45 000
-								</span> руб.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
 
-	<section>
+				<div class="topbar-wrapper">
+					<div class="navigation">
+						<ul>
+							<li><a href="#">Доставки и оплата</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="search-input">
+						<input type="text" placeholder="Поиск по артикулу или названию">
+					</div>
+					<div class="sign-in-box">
+						<div class="sign-in">
+							<a href="#"><i class="fa fa-user" aria-hidden="true"></i>Вход</a>
+						</div>
+						<div class="busket-block">
+							<div class="busket">
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								<div class="busket-amount">1</div>
+							</div>
+							<div class="sum">
+								<p>на 
+									<span>
+									45 000
+									</span> руб.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
 		<div class="container-fluid slider-box">
 			<div id="viewport">
 	            <ul id="slidewrapper">
@@ -182,34 +181,34 @@
 	                	<img src="img/gostinaya1.jpg" alt="4" class="slide-img">
 	                </li>
 	            </ul>
-
-	            <div id="prev-next-btns">
-	                <div id="prev-btn"><img src="img/left-arrow-angle_icon-icons.com_74249.png" alt=""></div>
-	                <div id="next-btn"><img src="img/right-arrow-angle_icon-icons.com_74249.png" alt=""></div>
-	            </div>
 	        </div>
 			<div class="container-fluid slider-header">
-				<div class="container">
+				<div class="header-overlay">
 					<div class="header-wrap">
 						<div class="logo">
 							<h2>фотообои и фрески</h2>
 							<p>Уют Вашего дома начинается здесь!</p>
 						</div>
-						<div class="measurements">
-							Выезд на замер
+						<div class="container1">
+							<div class="measurements">
+								Выезд на замер
+							</div>
+							<div class="daily">
+								<i class="fa fa-clock-o" aria-hidden="true"></i>
+								Ежедневно с 9:00 до 20:00
+							</div>
 						</div>
-						<div class="daily">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							Ежедневно с 9:00 до 20:00
+						<div class="container2">
+							<div class="phone-number">
+								<i class="fa fa-phone fa-rotate-270" aria-hidden="true"></i>
+								<a href="tel:+74951112233">+7 (495) 111 - 22 - 33</a>
+							</div>
+							<div class="call-order btn">
+								<a href="#">Заказать звонок</a>
+								<i class="fa fa-phone fa-rotate-270" aria-hidden="true"></i>
+							</div>
 						</div>
-						<div class="phone-number">
-							<i class="fa fa-phone fa-rotate-270" aria-hidden="true"></i>
-							<a href="tel:+74951112233">+7 (495) 111 - 22 - 33</a>
-						</div>
-						<div class="call-order btn">
-							<a href="#">Заказать звонок</a>
-							<i class="fa fa-phone fa-rotate-270" aria-hidden="true"></i>
-						</div>
+						
 					</div>
 					<div class="nav">
 						<ul>
@@ -231,10 +230,17 @@
 	            </ul>
 		    	<div class="button-block">
 		    		<button>Подробнее</button>
+			    	<div id="prev-next-btns">
+		                <div id="prev-btn"><img src="img/left-arrow-angle_icon-icons.com_74249.png" alt=""></div>
+		                <div id="next-btn"><img src="img/right-arrow-angle_icon-icons.com_74249.png" alt=""></div>
+		            </div>
 		    	</div>
 			</div>
-			
 		</div>
+	</header>
+
+	<section>
+		
 		<div class="container-fluid promo-row">
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 promo-block">
 				<div class="img-part"></div>
@@ -353,43 +359,53 @@
 	</section>
 	
 	<footer>
-		<div class="container">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer-block contacts">
-				<a href="tel:+74951112233">+7 (495) 111 - 22 - 33</a>
-				<a href="#">г.Москва, ул.Соловьиная Роща д.11 к.1</a>
-				<a href="mailto:info@f-fresco.ru">info@f-fresco.ru</a>
-				<a href="#">Ежедневно с 9:00 до 20:00</a>
+		<div class="container-fluid wrapper">
+			<div class="row footer-row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-block contacts">
+					<a href="tel:+74951112233">+7 (495) 111 - 22 - 33</a>
+					<a href="#">г.Москва, ул.Соловьиная Роща д.11 к.1</a>
+					<a href="mailto:info@f-fresco.ru">info@f-fresco.ru</a>
+					<a href="#">Ежедневно с 9:00 до 20:00</a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer-block">
+					<a href="#">Фрески</a>
+					<a href="#">Фотообои</a>
+					<a href="#">Создание по своему фото</a>
+					<a href="#">Материалы</a>
+					<a href="#">Наши работы</a>
+					<a href="#">О компании</a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer-block">
+					<a href="#">Доставка и оплата</a>
+					<a href="#">Услуги</a>
+					<a href="#">Статьи</a>
+					<a href="#">Акции</a>
+					<a href="#">FAQ</a>
+					<a href="#">Контакты</a>
+				</div>
+				<div class="footer-block submit-part">
+					<h3>Подпишись на рассылку свежих новостей</h3>
+					<input type="text" placeholder="Email">
+					<button class="btn-submit">Подписаться</button>
+				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer-block">
-				<a href="#">Фрески</a>
-				<a href="#">Фотообои</a>
-				<a href="#">Создание по своему фото</a>
-				<a href="#">Материалы</a>
-				<a href="#">Наши работы</a>
-				<a href="#">О компании</a>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer-block">
-				<a href="#">Доставка и оплата</a>
-				<a href="#">Услуги</a>
-				<a href="#">Статьи</a>
-				<a href="#">Акции</a>
-				<a href="#">FAQ</a>
-				<a href="#">Контакты</a>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer-block submit-part">
-				<h3>Подпишись на рассылку свежих новостей</h3>
-				<input type="text" placeholder="Email">
-				<button class="btn-submit">Подписаться</button>
-			</div>
-		</div>
-		<div class="container copyright-box">
-			<div class="copyright">
-				&copy 2006-2017 Francesco Fresco
-			</div>
-			<div class="social-links">
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
+			
+		
+			<div class="copyright-box row">
+				<div class="copyright col-lg-2 col-md-2 col-sm-2">
+					&copy 2006-2017 Francesco Fresco
+				</div>
+				<div class="footer-links col-lg-8 col-md-8 col-sm-8">
+					<a href="#">Политика конфиденциальности</a>
+					<a href="#">Использование cookies</a>
+					<a href="#">Пользовательское соглашение</a>
+					<a href="#">Дизайн и разработка <span>MVACorp</span></a>
+				</div>
+				<div class="social-links col-lg-2 col-md-2 col-sm-2">
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+				</div>
 			</div>
 		</div>
 	</footer>

@@ -2752,7 +2752,14 @@ footer .row {
 	  height:80vh;
 	  overflow:hidden;
 	}
-
+	.slider-box{
+	  min-height: 530px;
+	  max-height: 550px;
+	}
+	.slide-img {
+		min-height: 530px;
+	  	max-height: 550px;
+	}
 	#viewport {
 	    height: 100%;
 	}
@@ -2950,7 +2957,12 @@ footer .row {
 		margin-left: -80px;
 	}
 	.slider-box{
+	  min-height: 480px;
 	  max-height: 500px;
+	}
+	.slide-img {
+		min-height: 480px;
+	  	max-height: 500px;
 	}
 	.slider-nav-wrap {
 		max-height: 500px;
